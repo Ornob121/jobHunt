@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import JobCategory from "../JobCategory/JobCategory";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
+import Banner from "../Banner/Banner";
+import { useLoaderData, useParams } from "react-router-dom";
 
 const Home = () => {
   return (

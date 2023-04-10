@@ -1,11 +1,20 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const ShowFeaturedJobs = ({ job }) => {
-  console.log(job);
-  const { company, jobHour, jobName, jobType, littleAddress, picture, salary } =
-    job;
+  const {
+    company,
+    jobHour,
+    jobName,
+    jobType,
+    littleAddress,
+    picture,
+    salary,
+    _id,
+  } = job;
+  const navigate = useNavigate();
   return (
     <div className="w-auto h-[392px] p-10 border border-[#E8E8E8] rounded-lg">
       <img className="w-[117px] h-[40px] mb-8" src={picture} alt="" />
@@ -34,7 +43,10 @@ const ShowFeaturedJobs = ({ job }) => {
           <p>Salary: {salary}</p>
         </div>
       </div>
-      <button className="text-xl font-bold text-white px-5 py-3 mt-6 rounded-lg bg-gradient-to-l from-[#7E90FE] to-[#9873FF]">
+      <button
+        onClick={() => navigate(`jobDetails/${_id}`)}
+        className="text-xl font-bold text-white px-5 py-3 mt-6 rounded-lg bg-gradient-to-l from-[#7E90FE] to-[#9873FF]"
+      >
         View Details
       </button>
     </div>

@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  max-width: 1576px;
   margin: 0 auto;
   font-family: Manrope;
 }

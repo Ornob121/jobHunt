@@ -5,6 +5,9 @@ import ShowFeaturedJobs from "./ShowFeaturedJobs/ShowFeaturedJobs";
 const FeaturedJobs = () => {
   let featuredJobs = useLoaderData();
   const [showAll, setShowAll] = useState(false);
+  if (!featuredJobs) {
+    return window.location.reload();
+  }
 
   if (!showAll) {
     featuredJobs = featuredJobs.slice(0, 4);
