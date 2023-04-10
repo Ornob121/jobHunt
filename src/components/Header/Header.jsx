@@ -18,23 +18,29 @@ const Header = () => {
         </div>
         <div>
           <NavLink
-            style={{ fontWeight: 700, color: "#757575", marginRight: "42px" }}
+            style={{ fontWeight: 700, marginRight: "42px" }}
             to="/statistics"
-            className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+            className={({ isActive }) =>
+              isActive ? "text-blue-600" : "text-[#757575]"
+            }
           >
             Statistics
           </NavLink>
           <NavLink
-            style={{ fontWeight: 700, color: "#757575", marginRight: "42px" }}
-            to="appliedJobs"
-            className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+            style={{ fontWeight: 700, marginRight: "42px" }}
+            to="/appliedJobs"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600" : "text-[#757575]"
+            }
           >
             Applied Jobs
           </NavLink>
           <NavLink
-            style={{ fontWeight: 700, color: "#757575" }}
-            to="blog"
-            className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+            style={{ fontWeight: 700 }}
+            to="/blog"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600" : "text-[#757575]"
+            }
           >
             Blog
           </NavLink>

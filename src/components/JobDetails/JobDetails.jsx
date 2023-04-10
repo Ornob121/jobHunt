@@ -9,11 +9,11 @@ import {
   faPhoneAlt,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import { addToLocalDb } from "../../localDb";
 
 const JobDetails = () => {
   const navigate = useNavigate();
   const id = useParams();
-  const jobs = useLoaderData();
   const [jobsDetails, setJobsDetails] = useState([]);
   useEffect(() => {
     fetch("/public/featuredJobs.json")
@@ -24,6 +24,11 @@ const JobDetails = () => {
   if (!jobDetail) {
     return;
   }
+
+  const handleApplyNow = (id) => {
+    addToLocalDb(id);
+  };
+
   const {
     jobDescription,
     jobResponsibility,
@@ -34,6 +39,7 @@ const JobDetails = () => {
     phone,
     salary,
     jobName,
+    _id,
   } = jobDetail;
   return (
     <div>
@@ -114,7 +120,7 @@ const JobDetails = () => {
               </p>
             </div>
           </div>
-          <div className="text-center mt-6">
+          <div onClick={() => handleApplyNow(_id)} className="text-center mt-6">
             <button className="w-full text-xl font-bold text-white px-5 py-3 rounded-lg bg-gradient-to-l from-[#7E90FE] to-[#9873FF]">
               Apply Now
             </button>
