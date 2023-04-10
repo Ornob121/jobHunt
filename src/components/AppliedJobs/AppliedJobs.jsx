@@ -7,6 +7,20 @@ const AppliedJobs = () => {
   const appliedJobs = useLoaderData();
   console.log(appliedJobs);
 
+  const [appliedAllJob, setAppliedAllJob] = useState(appliedJobs);
+
+  const handleRemoteJobs = () => {
+    const remoteJobs = appliedJobs.filter((aj) => aj.jobType === "Remote");
+    setAppliedAllJob(remoteJobs);
+  };
+  const handleOnsiteJobs = () => {
+    const onsiteJobs = appliedJobs.filter((aj) => aj.jobType === "Onsite");
+    setAppliedAllJob(onsiteJobs);
+  };
+  const handleAllJobs = () => {
+    setAppliedAllJob(appliedJobs);
+  };
+
   if (appliedJobs.length === 0 || !appliedJobs) {
     return (
       <div>
@@ -32,9 +46,28 @@ const AppliedJobs = () => {
           Applied Jobs
         </h2>
       </Banner>
-
+      <div className="mt-36 mb-8 text-right px-[200px]">
+        <button
+          onClick={handleRemoteJobs}
+          className="text-xl font-bold text-white mr-8 px-5 py-3 mt-6 rounded-lg bg-gradient-to-l from-[#7E90FE] to-[#9873FF]"
+        >
+          Remote
+        </button>
+        <button
+          onClick={handleOnsiteJobs}
+          className="text-xl font-bold text-white mr-8 px-5 py-3 mt-6 rounded-lg bg-gradient-to-l from-[#7E90FE] to-[#9873FF]"
+        >
+          Onsite
+        </button>
+        <button
+          onClick={handleAllJobs}
+          className="text-xl font-bold text-white px-5 py-3 mt-6 rounded-lg bg-gradient-to-l from-[#7E90FE] to-[#9873FF]"
+        >
+          All
+        </button>
+      </div>
       <div>
-        {appliedJobs.map((applied) => (
+        {appliedAllJob.map((applied) => (
           <ShowAppliedJobs key={applied._id} jobs={applied}></ShowAppliedJobs>
         ))}
       </div>
