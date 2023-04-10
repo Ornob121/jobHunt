@@ -12,7 +12,11 @@ const JobCategory = () => {
     return;
   }
   return (
-    <div>
+    <div
+      style={{
+        padding: "0px 200px 0",
+      }}
+    >
       <h2 className="text-5xl text-center font-extrabold">Job Category List</h2>
       <p className="text-[#757575] text-center font-normal pt-4 pb-8">
         Explore thousands of job opportunities with all the information you

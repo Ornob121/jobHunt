@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Banner from "../Banner/Banner";
 
-const Header = ({ children }) => {
+const Header = () => {
   return (
     <div
       style={{
@@ -45,7 +45,7 @@ const Header = ({ children }) => {
           </button>
         </div>
       </div>
-      {children}
+      <Banner></Banner>
     </div>
   );
 };

@@ -16,7 +16,12 @@ const FeaturedJobs = () => {
     setShowAll(!showAll);
   };
   return (
-    <div className="mt-32">
+    <div
+      style={{
+        padding: "0px 200px 0",
+      }}
+      className="mt-32"
+    >
       <h2 className="text-5xl text-center font-extrabold">Featured Jobs</h2>
       <p className="text-[#757575] text-center font-normal pt-4 pb-8">
         Explore thousands of job opportunities with all the information you

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useNavigate, useParams } from "react-router-dom";
+import Banner from "../Banner/Banner";
 
 const JobDetails = () => {
   const navigate = useNavigate();
@@ -26,9 +27,16 @@ const JobDetails = () => {
     salary,
   } = jobDetail;
   return (
-    <div className="px-[200px]">
-      <h2 className="text-center my-10 text-5xl font-bold">Job Details</h2>
-      <div>
+    <div>
+      <Banner>
+        <h2
+          style={{ backgroundColor: "rgba(126,144,254,0.1)" }}
+          className="text-center pt-[101px] pb-36 text-5xl font-extrabold"
+        >
+          Job Details
+        </h2>
+      </Banner>
+      <div className="px-[200px] mt-[130px]">
         <div>
           <p className="font-medium text-[#757575] pb-4">
             <span className="font-extrabold text-black">Job Description: </span>
