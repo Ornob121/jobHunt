@@ -1,0 +1,26 @@
+[
+    {
+      "_id": "64338ef43196f51b2a79ba62",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToC4ALQoT8SeRoyAoUZUYIbS48M-pBLhY74YDOQUH0ScjA15xNf7eKTusSX6NHPrIu8lo&usqp=CAU",
+      "name": "Account & Finance",
+      "jobs": "300 Jobs Available"
+    },
+    {
+      "_id": "64338ef447effe9fb5097655",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/001/500/267/small/creative-idea-icon-free-vector.jpg",
+      "name": "Creative Design",
+      "jobs": "100+ Jobs Available"
+    },
+    {
+      "_id": "64338ef42f678f9b101f02bb",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ktJu3jkc1mqrJFhwrDme1odH9r6HXljUsQ&usqp=CAU",
+      "name": "Marketing & Sales",
+      "jobs": "150 Jobs Available"
+    },
+    {
+      "_id": "64338ef47df92ca7cfe2efcd",
+      "image": "https://cdn-icons-png.flaticon.com/512/5256/5256062.png",
+      "name": "Engineering Job",
+      "jobs": "224 Jobs Available"
+    }
+  ]
