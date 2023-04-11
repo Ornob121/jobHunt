@@ -63,7 +63,7 @@ const AppliedJobs = () => {
           onClick={handleAllJobs}
           className="text-xl font-bold text-white px-5 py-3 mt-6 rounded-lg bg-gradient-to-l from-[#7E90FE] to-[#9873FF]"
         >
-          All
+          Show All
         </button>
       </div>
       <div>

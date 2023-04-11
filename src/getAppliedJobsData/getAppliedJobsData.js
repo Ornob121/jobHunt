@@ -1,7 +1,7 @@
 import { getFromLocalStorage } from "../localDb";
 
 const getAppliedJobsData = async () => {
-  const jobs = await fetch("featuredJobs.json");
+  const jobs = await fetch("/featuredJobs.json");
   const appliedJobsAllData = await jobs.json();
 
   const appliedJobsId = getFromLocalStorage();

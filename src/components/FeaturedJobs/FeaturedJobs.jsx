@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import ShowFeaturedJobs from "./ShowFeaturedJobs/ShowFeaturedJobs";
+import "../../assets/FeaturedJobs.css";
 
 const FeaturedJobs = () => {
   let featuredJobs = useLoaderData();
@@ -20,14 +21,16 @@ const FeaturedJobs = () => {
       style={{
         padding: "0px 200px 0",
       }}
-      className="mt-32"
+      className="mt-32 featured-job-div"
     >
-      <h2 className="text-5xl text-center font-extrabold">Featured Jobs</h2>
-      <p className="text-[#757575] text-center font-normal pt-4 pb-8">
+      <h2 className="text-5xl text-center font-extrabold featured-job-text">
+        Featured Jobs
+      </h2>
+      <p className="text-[#757575] text-center font-normal pt-4 pb-8 featured-job-p">
         Explore thousands of job opportunities with all the information you
         need. Its your future
       </p>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2  gap-6">
         {featuredJobs.map((job) => (
           <ShowFeaturedJobs key={job._id} job={job}></ShowFeaturedJobs>
         ))}

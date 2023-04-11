@@ -1,0 +1,11 @@
+@media screen and (max-width: 640px) {
+  .featured-job-div {
+    padding: 0 20px !important;
+  }
+  .featured-job-text {
+    font-size: 30px;
+  }
+  .featured-job-p {
+    font-size: 12px;
+  }
+}

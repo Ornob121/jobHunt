@@ -1,0 +1,15 @@
+@media screen and (max-width: 640px) {
+  .job-category-div {
+    padding: 0 20px !important;
+  }
+  .job-category-text {
+    font-size: 30px;
+  }
+  .job-category-p {
+    font-size: 12px;
+  }
+  .job-category-item {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}

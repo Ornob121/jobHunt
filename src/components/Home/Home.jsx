@@ -4,6 +4,7 @@ import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 import Banner from "../Banner/Banner";
 import { useLoaderData, useParams } from "react-router-dom";
 import img from "../../assets/hardy.png";
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -14,23 +15,23 @@ const Home = () => {
             backgroundColor: "rgba(126,144,254,0.1)",
             padding: "0 200px",
           }}
-          className="flex justify-between mb-32"
+          className="flex justify-between mb-32 banner-div"
         >
           <div>
-            <h1 className="text-[80px] font-extrabold">
+            <h1 className="text-[80px] font-extrabold banner-text">
               One Step Closer To Your{" "}
               <span className="text-[#7E90FE]">Dream Job</span>
             </h1>
-            <p className="text-[#757575] text-lg font-medium">
+            <p className="text-[#757575] text-lg font-medium banner-p">
               Explore thousands of job opportunities with all the information
               you need. Its your future. Come find it. Manage all your job
               application from start to finish.
             </p>
-            <button className="text-xl font-bold text-white px-7 py-5 rounded-lg bg-gradient-to-l from-[#7E90FE] to-[#9873FF] mt-8">
+            <button className="text-xl font-bold text-white px-7 py-5 rounded-lg bg-gradient-to-l from-[#7E90FE] to-[#9873FF] mt-8 banner-btn">
               Get Started
             </button>
           </div>
-          <img src={img} alt="" />
+          <img className="banner-img" src={img} alt="" />
         </div>
       </Banner>{" "}
       <JobCategory></JobCategory>

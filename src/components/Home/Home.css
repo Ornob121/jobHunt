@@ -1,0 +1,18 @@
+@media screen and (max-width: 640px) {
+  .banner-div {
+    padding: 0 20px !important;
+  }
+  .banner-text {
+    font-size: 30px !important;
+  }
+  .banner-p {
+    font-size: 12px;
+  }
+  .banner-btn {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+  .banner-img {
+    width: 50%;
+  }
+}

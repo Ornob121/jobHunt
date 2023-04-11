@@ -33,7 +33,7 @@ const Statistics = () => {
     },
     {
       name: "assignment6",
-      mark: 55,
+      mark: 58,
     },
     {
       name: "assignment7",

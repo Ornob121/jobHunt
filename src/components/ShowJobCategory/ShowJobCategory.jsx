@@ -4,6 +4,7 @@ const ShowJobCategory = ({ job }) => {
   const { image, name, jobs } = job;
   return (
     <div
+      className="job-category-item"
       style={{
         backgroundColor: "rgba(126,144,254,0.1)",
         width: "311px",
