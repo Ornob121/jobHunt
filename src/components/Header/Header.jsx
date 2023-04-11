@@ -47,6 +47,15 @@ const Header = () => {
             <li>
               <NavLink
                 style={{ fontWeight: 700, marginRight: "42px" }}
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "text-blue-600" : "text-[#757575]"
+                }
+              >
+                Home
+              </NavLink>
+              <NavLink
+                style={{ fontWeight: 700, marginRight: "42px" }}
                 to="/statistics"
                 className={({ isActive }) =>
                   isActive ? "text-blue-600" : "text-[#757575]"
