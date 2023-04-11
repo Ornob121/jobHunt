@@ -16,7 +16,7 @@ const JobDetails = () => {
   const id = useParams();
   const [jobsDetails, setJobsDetails] = useState([]);
   useEffect(() => {
-    fetch("/public/featuredJobs.json")
+    fetch("/featuredJobs.json")
       .then((res) => res.json())
       .then((data) => setJobsDetails(data));
   }, []);
