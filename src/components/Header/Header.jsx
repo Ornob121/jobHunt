@@ -31,7 +31,7 @@ const Header = () => {
 
         <div>
           <Link to="/">
-            <h2 className="md:text-4xl md:static relative left-24 text-2xl font-bold ">
+            <h2 className="md:text-4xl absolute md:static mx-auto top-2 text-2xl font-bold ">
               JobHunt
             </h2>
           </Link>
