@@ -39,7 +39,9 @@ const Header = () => {
         <div>
           <ul
             className={`md:flex md:static absolute ${
-              isMenuOpen ? "-top-24 left-4" : "top-8 left-4 bg-yellow-300 p-4"
+              isMenuOpen
+                ? "-top-24 left-4"
+                : "top-8 left-4 bg-yellow-300 md:bg-[rgba(126,144,254,0.01)] p-4"
             } duration-500`}
           >
             <li>
