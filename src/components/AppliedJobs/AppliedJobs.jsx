@@ -5,7 +5,6 @@ import ShowAppliedJobs from "../ShowAppliedJobs/ShowAppliedJobs";
 
 const AppliedJobs = () => {
   const appliedJobs = useLoaderData();
-  console.log(appliedJobs);
 
   const [appliedAllJob, setAppliedAllJob] = useState(appliedJobs);
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   AreaChart,
   Area,
@@ -10,40 +10,12 @@ import {
 } from "recharts";
 
 const Statistics = () => {
-  const data = [
-    {
-      name: "assignment1",
-      mark: 57,
-    },
-    {
-      name: "assignment2",
-      mark: 59,
-    },
-    {
-      name: "assignment3",
-      mark: 58,
-    },
-    {
-      name: "assignment4",
-      mark: 60,
-    },
-    {
-      name: "assignment5",
-      mark: 54,
-    },
-    {
-      name: "assignment6",
-      mark: 58,
-    },
-    {
-      name: "assignment7",
-      mark: 60,
-    },
-    {
-      name: "assignment8",
-      mark: 60,
-    },
-  ];
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch("data.json")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
   return (
     <div>
       <div
